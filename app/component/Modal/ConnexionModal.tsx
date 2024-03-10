@@ -78,7 +78,7 @@ const ConnexionModal = () => {
           />
           <div className="text-neutral-500 text-center mt-4 font-light flex justify-center">
             <div className="cursor-pointer mr-2">
-              Tu ne fait pas partie de l'équipe?
+              Tu ne fait pas partie de notre équipe?
             </div>
             <div onClick={onToggle} className="text-neutral-800 cursor-pointer hover:underline">
               Inscrit toi!

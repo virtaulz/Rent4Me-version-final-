@@ -67,7 +67,7 @@ const InscriptionModal = () => {
           />
           <div className="text-neutral-500 text-center mt-4 font-light flex justify-center">
             <div className="cursor-pointer mr-2">
-              Tu fais déjà partie de l'équipe?
+              Tu fais déjà partie de notre équipe?
             </div>
             <div onClick={onToggle} className="text-neutral-800 cursor-pointer hover:underline">
               Connecte toi
