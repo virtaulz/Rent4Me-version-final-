@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from "react";
 import getAnnonces, { IAnnoncesParams } from "./actions/getAnnonces";
 import getUtilisateur from "./actions/getUtilisateur";
@@ -8,9 +10,9 @@ import EmptyState from "./component/EmptyState";
 
 export const dynamic = 'force-dynamic';
 
-type HomeProps = {
+interface HomeProps {
   search: IAnnoncesParams;
-};
+}
 
 const Home: React.FC<HomeProps> = ({ search }) => {
   const [annonces, setAnnonces] = useState<any[]>([]);
