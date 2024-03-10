@@ -5,6 +5,8 @@ import BugRefresh from "./component/BugRefresh";
 import Container from "./component/Container";
 import EmptyState from "./component/EmptyState";
 
+export const dynamic = 'force-dynamic'
+
 interface HomeProps {
   search: IAnnoncesParams
 };
