@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from "react";
 import getAnnonces, { IAnnoncesParams } from "./actions/getAnnonces";
 import getUtilisateur from "./actions/getUtilisateur";
