@@ -1,11 +1,10 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   experimental: {
   },
-   webpack: (config) => {
-       config.externals = [...config.externals, 'bcrypt'];
-      return config;
-    },
+  webpack: (config) => {
+    config.externals = [...config.externals, 'bcrypt'];
+    return config;
+  },
   images: {
     domains: [
       'res.cloudinary.com', 
@@ -14,4 +13,4 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+export default nextConfig;
