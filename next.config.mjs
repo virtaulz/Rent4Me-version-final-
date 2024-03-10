@@ -1,15 +1,11 @@
-// next.config.mjs
+/** 
+ * @type {import('next').NextConfig} 
+ */
 const nextConfig = {
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.module.rules.push({
-        test: /\.html$/,
-        loader: 'ignore-loader', // Ignorer le chargement des fichiers HTML
-      });
-    }
-
-    return config;
+  future: {
+    webpack5: true,
   },
+
   images: {
     domains: [
       'res.cloudinary.com', 
