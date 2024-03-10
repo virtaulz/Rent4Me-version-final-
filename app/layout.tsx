@@ -12,6 +12,7 @@ import SearchModal from "./component/Modal/SearchModal";
 
 const inter = Oswald({ subsets: ["latin"] });
 
+
 export const metadata: Metadata = {
   title: "Rent4Me",
   description: "Application pour louer un logement",

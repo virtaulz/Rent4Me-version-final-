@@ -5,6 +5,7 @@ import getUtilisateur from "../actions/getUtilisateur";
 import getAnnonces from "../actions/getAnnonces";
 import AppartementsClient from "./AppartementsClient";
 
+export const dynamic = 'force-dynamic' 
 const AppartmentsPage = async () => {
     const utilisateur = await getUtilisateur();
   
