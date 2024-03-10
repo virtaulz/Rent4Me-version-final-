@@ -6,11 +6,11 @@ import Container from "./component/Container";
 import EmptyState from "./component/EmptyState";
 
 interface HomeProps {
-  searchParams: IAnnoncesParams
+  search: IAnnoncesParams
 };
 
-const Home = async ({ searchParams }: HomeProps) => {
-  const annonces = await getAnnonces(searchParams);
+const Home = async ({ search }: HomeProps) => {
+  const annonces = await getAnnonces(search);
   const utilisateur = await getUtilisateur();
   if (annonces.length ===0){
     return(
